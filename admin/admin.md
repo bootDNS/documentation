@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Admin Web Interface
+title: bootDNS-Admin Web Interface
 nav_order: 2
 has_children: true
 ---
