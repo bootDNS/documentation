@@ -6,7 +6,7 @@ nav_order: 1
 has_children: false
 ---
 
-## Getting Started
+# Getting Started
 
 ### 1. Download Docker
 Since all components run in Docker, it is a requirement for bootDNS to have this installed, please see Dockers own guides at: https://docs.docker.com/engine/install/, also be sure that you have installed the docker-compose plugin: https://docs.docker.com/compose/install/linux/
