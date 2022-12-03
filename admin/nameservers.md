@@ -26,7 +26,7 @@ In the form "Create New NameServer", you can see the following fields:
 | Extra     | In bootDNS, its possible to create your own type of NS, fx. if you want to push to AWS, you might need some extra variables to be set, its possbile to set them here, in json format, for normal use cases (standalone/master/slave) this is not needed | [ "APIKEY": "...." ]|
 
 ##### Setting up agent
-See: [https://docs.bootdns.app/admin/getting-started.html](https://docs.bootdns.app/admin/getting-started.html)
+See: [https://docs.bootdns.app/agent/getting-started.html](https://docs.bootdns.app/agent/getting-started.html)
 
 ### Flush Nameserver 
 Sometimes it is nessersary to clear the cache of a nameserver, in the list of nameservers, click the little "toilet roll" to send a flush request to the agent
