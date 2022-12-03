@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Getting Started
-parent: bootDNS-agent w. Bind
+parent: bootDNS-Agent w. Bind
 nav_order: 1
 has_children: false
 ---
