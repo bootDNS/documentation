@@ -6,11 +6,6 @@ nav_order: 1
 has_children: false
 ---
 
-# Project Title
-
-A brief description of what this project does and who it's for
-
-
 ## Getting Started
 
 ### 1. Download Docker
