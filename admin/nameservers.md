@@ -18,8 +18,8 @@ In the form "Create New NameServer", you can see the following fields:
 | ------------- |:-------------| -----:|
 | Host      | The external hostname of your nameserver | ns1.YOURDOMAIN.TLD |
 | Ip      | The external ip of your nameserver      |   X.X.X.X |
-| API Host | The internal host/ip of your nameserver      |    X.X.X.X |
-| API Port | The port of the agent, you normally wont touch this field      |    25251 |
+| Agent Host | The internal host/ip of your nameserver      |    X.X.X.X |
+| Agent Port | The port of the agent, you normally wont touch this field      |    25251 |
 | Push Cron Schedule      | How often you want bootDNS to push out edited zones, in CRON format <br />default is every hour, check [crontab.guru](https://crontab.guru/), for more examples |   0 * * * * |
 | Type      | **Standalone**: Every node is not dependent of anything, every node is its own master in most cases, you would use this <br />**Master**: For a master-slave setup, a master contains all zones and contains the "truth" <br />**Slave**: Caches zones from the master if needed     |    |
 | Token      | This Token, is the authentication token from the Agent to the admin module, this is to be used when setting up an agent      |    |
