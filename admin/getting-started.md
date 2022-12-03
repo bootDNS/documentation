@@ -54,4 +54,4 @@ ee74597810cd   influxdb:2.2                 "/entrypoint.sh infl…"   34 second
 
 ```
 
-You should now be able to access it via: http://HOSTNAME
+You should now be able to access it via: http://HOSTNAME, default username/password is: admin / password
