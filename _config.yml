@@ -1,3 +1,6 @@
 remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
-title: bootDNS Documentation
+title: bootDNS Docs
+url: "https://docs.bootdns.app"
+plugins:
+  - jekyll-seo-tag
