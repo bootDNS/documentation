@@ -16,9 +16,9 @@ We have made it easy to get up and running, simply download this file: [docker-c
 
 Example:
 ```bash
-#> mkdir -p /opt/bootDNS
-#> cd /opt/bootDNS
-#> wget 'https://github.com/bootDNS/bootDNS-admin/blob/main/docker-compose.yml?raw=true' -O docker-compose.yml
+user@host:~$ mkdir -p /opt/bootDNS
+user@host:~$ cd /opt/bootDNS
+user@host:/opt/bootDNS$ wget 'https://github.com/bootDNS/bootDNS-admin/blob/main/docker-compose.yml?raw=true' -O docker-compose.yml
 ```
     
 ### 3. Generate your APP_KEY
@@ -26,7 +26,7 @@ bootDNS-admin is using a PHP framework called Laravel, this requires a APP_KEY t
 To get a unique key, run:
 
 ```bash
-#> docker run --rm --entrypoint php terpz/bootdns:admin-latest artisan key:generate --show
+user@host:/opt/bootDNS$ docker run --rm --entrypoint php terpz/bootdns:admin-latest artisan key:generate --show
 ```
 
 This will return something like:
@@ -40,14 +40,14 @@ In your newly downloaded docker-compose.yml file (step #2), open it with your fa
 If you followed the docker installation guide, and you have populated your docker-compose.yml file with your APP_KEY, you should be good to go:
 
 ```bash
-#> docker-compose up -d 
+user@host:/opt/bootDNS$ docker-compose up -d 
 ```
 
 This will create the required containers; MariaDB for database, influxDB for DNS metrics, and the admin module.
 Too see if its all running:
 
 ```bash
-#> docker ps
+user@host:~$ docker ps
 f3d13cc3b955   terpz/bootdns:admin-latest   "bash run.sh"            33 seconds ago   Up 31 seconds (healthy)   0.0.0.0:80->80/tcp, :::80->80/tcp                       bootdns-admin-1
 ee74597810cd   influxdb:2.2                 "/entrypoint.sh infl…"   34 seconds ago   Up 32 seconds             0.0.0.0:8086->8086/tcp, :::8086->8086/tcp               bootdns-influxdb-1
 040fb3c3ef61   mariadb:latest               "docker-entrypoint.s…"   34 seconds ago   Up 32 seconds             3306/tcp                                                bootdns-mariadb-1
