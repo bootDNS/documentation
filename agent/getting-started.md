@@ -16,9 +16,9 @@ We have made it easy to get up and running, simply download this file: [docker-c
 
 Example:
 ```bash
-#> mkdir -p /opt/bootDNS-agent
-#> cd /opt/bootDNS-agent
-#> wget 'https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.yml?raw=true' -O docker-compose.yml
+user@host:~$ mkdir -p /opt/bootDNS-agent
+user@host:~$ cd /opt/bootDNS-agent
+user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.yml?raw=true' -O docker-compose.yml
 ```
     
 ### 3. Insert your token
