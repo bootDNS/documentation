@@ -13,7 +13,7 @@ has_children: false
 POST /api/zone/{DOMAIN}
 ```
 
-{: .important-title }
+{: .note-title }
 > Data to be send as json
 
 | Parameter | Type     | Description                |
