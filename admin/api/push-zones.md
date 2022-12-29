@@ -7,7 +7,7 @@ nav_order: 2
 has_children: false
 ---
 
-### Get Active Alerts
+### Push Zone To Nameservers
 
 ```http
 POST /api/push-zone/{DOMAIN}
