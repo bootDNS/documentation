@@ -2,6 +2,7 @@ remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
 title: bootDNS Docs
 url: "https://docs.bootdns.app"
+favicon_ico: "/assets/favicon-16x16.png"
 
 back_to_top: true
 back_to_top_text: "Back to top"
