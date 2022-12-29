@@ -19,7 +19,7 @@ POST /api/push-zone/{DOMAIN}
 
 ##### Example
 ```bash
-curl 'http://HOSTNAME/api/push-zone/example.com' \
+curl --request POST 'http://HOSTNAME/api/push-zone/example.com' \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer API-TOKEN'
 ```
