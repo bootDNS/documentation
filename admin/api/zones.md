@@ -13,7 +13,9 @@ has_children: false
 POST /api/zone/{DOMAIN}
 ```
 
-Data to be send as json
+{: .important-title }
+> Data to be send as json
+
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `ns` | `string, comma seperated` | **REQUIRED**. NS to allocate to this new zone |
