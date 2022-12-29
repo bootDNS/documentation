@@ -22,3 +22,10 @@ user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blo
 ```
     
 ### 3. Insert your token
+From the admin panel, goto nameservers and create a new nameserver ([Nameservers Docs](https://docs.bootdns.app/admin/nameservers.html)) 
+and insert into your newly downloaded docker-compose.yml file, after TOKEN=
+
+### 4. Start it up!
+```
+user@host:/opt/bootDNS-agent$ docker compose up -d 
+```
