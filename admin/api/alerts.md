@@ -10,7 +10,7 @@ has_children: false
 ### Get Active Alerts
 
 ```http
-  GET /api/alerts?clear=1/0
+GET /api/alerts?clear=1/0
 ```
 
 | Parameter | Type     | Description                |
@@ -19,9 +19,9 @@ has_children: false
 
 ##### Example
 ```bash
-  curl 'http://HOSTNAME/api/alerts?clear=1' \
-    --header 'Content-Type: application/json' \
-    --header 'Authorization: Bearer API-TOKEN'
+curl 'http://HOSTNAME/api/alerts?clear=1' \
+  --header 'Content-Type: application/json' \
+  --header 'Authorization: Bearer API-TOKEN'
 ```
 
 ##### Response
