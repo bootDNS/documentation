@@ -25,7 +25,7 @@ POST /api/zone/{DOMAIN}
 
 ##### Example
 ```bash
-curl 'http://HOSTNAME/api/zone/example.com' \
+curl --request POST 'http://HOSTNAME/api/zone/example.com' \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer API-TOKEN' \
   --data-raw '{"ns":"ns1.domain.dk,ns2.domain.dk", "active":1 }
