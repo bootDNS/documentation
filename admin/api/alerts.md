@@ -5,7 +5,7 @@ parent: API Reference
 nav_order: 1
 has_children: false
 ---
-
+ 
 ### Get Active Alerts
 
 ```http
