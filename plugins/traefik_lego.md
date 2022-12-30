@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Traefik / Lego HTTPREQ Support
+title: Traefik / Lego Support
 parent: Plugins / Addons
 nav_order: 1
 has_children: false
