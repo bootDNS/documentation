@@ -19,14 +19,31 @@ user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blo
 
 ### 2. Configure fluentd
 In the fluentd compose file, you will see some syslog parameters you need to change to your need, syslog_server / syslog_port / syslog_proto
+
+If Syslog:
 ```
     environment:
       - TZ=Europe/Copenhagen
       - syslog_server=192.168.4.104
       - syslog_port=2516
       - syslog_proto=udp
+      - type=syslog
 
 ```
+
+If Splunk HEC:
+```
+    environment:
+      - TZ=Europe/Copenhagen
+      - splunkhec_server=192.168.4.104
+      - splunkhec_port=8088
+      - splunkhec_token=....
+      - splunkhec_insecuressl=false
+      - type=splunk
+
+```
+
+
 ### 3. Start it!
 Now, from now on when you want to start/recreate the agent, you need to run it with this, to include fluentd:
 ```
