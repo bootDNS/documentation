@@ -39,7 +39,7 @@ docker compose exec -ti admin php artisan nameservers:statistics
 Tests the zones for errors, and checks for dnssec expiry
 
 ```
-docker compose exec -ti admin php artisan zones:check {{--domain=}}
+docker compose exec -ti admin php artisan zones:check {--domain=}
 ```
 
 ---
@@ -48,7 +48,7 @@ docker compose exec -ti admin php artisan zones:check {{--domain=}}
 Sends dsu for domains
 
 ```
-docker compose exec -ti admin php artisan zones:dsu {{--domain=}}
+docker compose exec -ti admin php artisan zones:dsu {--domain=}
 ```
 
 ---
@@ -57,7 +57,7 @@ docker compose exec -ti admin php artisan zones:dsu {{--domain=}}
 Get the raw zone file for domain
 
 ```
-docker compose exec -ti admin php artisan zones:file {{--domain=}} {{--view=1}}
+docker compose exec -ti admin php artisan zones:file {--domain=} {--view=1}
 ```
 
 
