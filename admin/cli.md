@@ -67,5 +67,5 @@ docker compose exec -ti admin php artisan zones:file {{--domain=}} {{--view=1}}
 Push zone(s) to ns (same thing which is scheduled or via force push)
 
 ```
-docker compose exec -ti admin php artisan zones:push {{--ns=}} {{--domain=}} {{--force}} {{--ignoreErrors}} {{--restart}} {{--reload}}
+docker compose exec -ti admin php artisan zones:push {--ns=} {--domain=} {--force} {--ignoreErrors} {--restart} {--reload}
 ```
