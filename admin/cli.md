@@ -5,8 +5,19 @@ parent: bootDNS-Admin Web Interface
 nav_order: 3
 has_children: false
 ---
-
 All scheduled jobs are run as "commands" inside the container, and can ofcourse be triggered manually
+
+
+---
+
+### Clear Cache
+Clears the cache of sessions/graphs/views/routes
+
+```
+docker compose exec -ti admin php artisan clear:cache
+```
+
+---
 
 ### Nameservers - Check (online/offline)
 This command is to check if your ns is online or offline, if your ns have been offline, but are now online, it will re-push to that ns
