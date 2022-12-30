@@ -18,7 +18,7 @@ user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blo
 ```
 
 ### 2. Configure fluentd
-In the fluentd compose file, you will see some syslog parameters you need to change to your need, syslog_server / syslog_port / syslog_proto
+In the fluentd compose file, you will see the default is syslog, but can be exchanged with:
 
 If Syslog:
 ```
