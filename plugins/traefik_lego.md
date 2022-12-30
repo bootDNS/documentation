@@ -6,7 +6,9 @@ nav_order: 1
 has_children: false
 ---
 
-## The following must be set
+## Traefik / Lego HTTPREQ Support
+
+The following must be set:
 
 ```
 provider: httpreq
