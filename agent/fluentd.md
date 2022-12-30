@@ -14,7 +14,7 @@ If you want to export the query logs from Bind/Named within the agent, this can 
 
 ```
 #cd into where your agent docker-compose is present
-user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.fluentd.yml?raw=true' -O docker-compose.yml
+user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.fluentd.yml?raw=true' -O docker-compose.fluentd.yml
 ```
 
 ### 2. Configure fluentd
