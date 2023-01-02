@@ -55,3 +55,6 @@ ee74597810cd   influxdb:2.2                 "/entrypoint.sh infl…"   34 second
 ```
 
 You should now be able to access it via: http://HOSTNAME, default username/password is: admin / password
+
+### 5. Setup your dns agent!
+Now that you have the admin interface up and running, click on the [nameservers](/admin/nameservers.html) tab, generate a token and check out the guide for the agent, [here](/agent/getting-started.html)
