@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started
 parent: bootDNS-Admin Web Interface
-nav_order: 1
+nav_order: 2
 has_children: false
 ---
 
