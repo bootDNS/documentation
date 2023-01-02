@@ -12,7 +12,7 @@ If you want to export the query logs from Bind/Named within the agent, this can 
 
 ### 1. Download fluentd compose file
 
-```
+```bash
 #cd into where your agent docker-compose is present
 user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.fluentd.yml?raw=true' -O docker-compose.fluentd.yml
 ```
@@ -46,13 +46,13 @@ If Splunk HEC:
 
 ### 3. Start it!
 Now, from now on when you want to start/recreate the agent, you need to run it with this, to include fluentd:
-```
+```bash
 user@host:/opt/bootDNS-agent$ docker compose -f docker-compose.yml -f docker-compose.fluentd.yml up -d
 ```
 
 ### 3.1 Merge conf files
 If you want to make life a bit easier for yourself, you can merge the conf files using this command, note that this will overwrite your docker-compose.yml file
-```
-docker compose -f docker-compose.yml -f docker-compose.fluentd.yml config > docker-compose.yml
+```bash
+user@host:/opt/bootDNS-agent$ docker compose -f docker-compose.yml -f docker-compose.fluentd.yml config > docker-compose.yml
 ```
 Then you're able to run your normal: docker compose pull / docker compose up -d
