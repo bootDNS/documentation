@@ -2,7 +2,7 @@
 layout: default
 title: Updating
 parent: bootDNS-Agent w. Bind
-nav_order: 3
+nav_order: 2
 has_children: false
 ---
 
