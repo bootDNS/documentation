@@ -2,7 +2,7 @@
 layout: default
 title: CLI Commands
 parent: bootDNS-Admin Web Interface
-nav_order: 3
+nav_order: 5
 has_children: false
 ---
 All scheduled jobs are run as "commands" inside the container, and can ofcourse be triggered manually
