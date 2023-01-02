@@ -49,3 +49,10 @@ Now, from now on when you want to start/recreate the agent, you need to run it w
 ```
 user@host:/opt/bootDNS-agent$ docker compose -f docker-compose.yml -f docker-compose.fluentd.yml up -d
 ```
+
+### 3.1 Merge conf files
+If you want to make life a bit easier for yourself, you can merge the conf files using this command, note that this will overwrite your docker-compose.yml file
+```
+docker compose -f docker-compose.yml -f docker-compose.fluentd.yml config > docker-compose.yml
+```
+Then you're able to run your normal: docker compose pull / docker compose up -d
