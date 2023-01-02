@@ -11,17 +11,17 @@ has_children: false
 Cd into your bootdns-agent directory, if you have followed our getting-started guide, it will be in: /opt/bootDNS-agent
 
 ```
-cd /opt/bootDNS-agent
-docker compose pull
-docker compose up -d 
+user@host:~$ cd /opt/bootDNS-agent
+user@host:/opt/bootDNS-agent$ docker compose pull
+user@host:/opt/bootDNS-agent$ docker compose up -d 
 ```
 
 If using with fluentd:
 
 ```
-cd /opt/bootDNS-agent
-docker compose pull
-docker compose -f docker-compose.yml -f docker-compose.fluentd.yml up -d
+user@host:~$ cd /opt/bootDNS-agent
+user@host:/opt/bootDNS-agent$ docker compose pull
+user@host:/opt/bootDNS-agent$ docker compose -f docker-compose.yml -f docker-compose.fluentd.yml up -d
 ```
 
 Done :) 
