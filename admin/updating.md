@@ -10,10 +10,10 @@ has_children: false
 
 Cd into your bootdns-admin directory, if you have followed our getting-started guide, it will be in: /opt/bootDNS
 
-```
-cd /opt/bootDNS
-docker compose pull
-docker compose up -d 
+```bash
+user@host:~$ cd /opt/bootDNS
+user@host:/opt/bootDNS$ docker compose pull
+user@host:/opt/bootDNS$ docker compose up -d 
 ```
 
 Done :) 
