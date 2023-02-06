@@ -27,5 +27,5 @@ and insert into your newly downloaded docker-compose.yml file, after TOKEN=
 
 ### 4. Start it up!
 ```
-user@host:/opt/bootDNS-agent$ docker compose up -d 
+docker compose up -d 
 ```
