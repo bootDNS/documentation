@@ -26,7 +26,7 @@ bootDNS-admin is using a PHP framework called Laravel, this requires a APP_KEY t
 To get a unique key, run:
 
 ```bash
-user@host:/opt/bootDNS$ docker run --rm --entrypoint php terpz/bootdns:admin-latest artisan key:generate --show
+docker run --rm --entrypoint php terpz/bootdns:admin-latest artisan key:generate --show
 ```
 
 This will return something like:
@@ -40,7 +40,7 @@ In your newly downloaded docker-compose.yml file (step #2), open it with your fa
 If you followed the docker installation guide, and you have populated your docker-compose.yml file with your APP_KEY, you should be good to go:
 
 ```bash
-user@host:/opt/bootDNS$ docker-compose up -d 
+docker-compose up -d 
 ```
 
 This will create the required containers; MariaDB for database, influxDB for DNS metrics, and the admin module.
