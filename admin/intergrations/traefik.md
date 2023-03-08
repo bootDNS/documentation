@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Alerts
-parent: intergrations
+title: Traefik
+parent: Intergrations
 grand_parent: bootDNS-Admin Web Interface
 nav_order: 1
 has_children: false
