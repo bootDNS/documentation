@@ -9,7 +9,7 @@ has_children: false
 
 ### Traefik Intergration
 
-We dont have a native traefik dns provide, but we do support the dns provider plugin "[httpreq](https://go-acme.github.io/lego/dns/httpreq/)"
+We dont have a native traefik dns provider, but we do support the dns provider plugin "[httpreq](https://go-acme.github.io/lego/dns/httpreq/)"
 
 | Variable | Value |
 | ------ | ------ |
