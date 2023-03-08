@@ -8,3 +8,12 @@ has_children: false
 ---
 
 ### Traefik Intergration
+
+We dont have a native traefik dns provide, but we do support the dns provider plugin "[httpreq](https://go-acme.github.io/lego/dns/httpreq/)"
+
+| Variable | Value |
+| ------ | ------ |
+| HTTPREQ_ENDPOINT | http(s)://your-bootdns-host:port/lego |
+| HTTPREQ_USERNAME | bootdns |
+| HTTPREQ_PASSWORD | A generated bootdns token from gui |
+| HTTPREQ_PROPAGATION_TIMEOUT | 20 |
