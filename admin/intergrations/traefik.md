@@ -17,3 +17,5 @@ We dont have a native traefik dns provider, but we do support the dns provider p
 | HTTPREQ_USERNAME | bootdns |
 | HTTPREQ_PASSWORD | A generated bootdns token from gui |
 | HTTPREQ_PROPAGATION_TIMEOUT | 20 |
+
+The Token generated must have the "zones-edit" capability
