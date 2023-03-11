@@ -14,7 +14,7 @@ has_children: false
 | REMOTEQUERY_TYPE      | splunk / |  |
 
 
-This makes it possible to pull zone data into the view of bootDNS.
+This makes it possible to pull zone data from various log mangement sources, into the view of bootDNS.
 Under a zone, there will be a "Remote Query" box, showing the results of the module.
 
 #### Splunk
