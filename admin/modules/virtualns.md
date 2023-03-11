@@ -17,8 +17,8 @@ Code and AWS example can be found on [git](https://github.com/bootDNS/bootDNS-ad
 
 
 #### Virtual Nameservers Supported
-| System        | Desc           |
+| System | Desc |
 | ------------- |:-------------:|
-| Amazon Route 53  |          |
+| Amazon Route 53 | - |
 
 
