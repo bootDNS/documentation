@@ -8,7 +8,7 @@ has_children: false
 
 # Notifications
 
-We count build our own framework, which supported the basic chat providers, but instead we choose to use [Apprise](https://github.com/caronc/apprise) which as they say:
+We could build our own framework, which supported the basic chat providers, but instead we choose to use [Apprise](https://github.com/caronc/apprise), as they say:
 > Apprise allows you to send a notification to almost all of the most popular notification services available to us today such as: Telegram, Discord, Slack, Amazon SNS, Gotify, etc.
 
 To see the full list of supported services, check [here](https://github.com/caronc/apprise#productivity-based-notifications)
