@@ -11,7 +11,7 @@ has_children: false
 
 ## Backup
 
-Backup is created every day at 04:00, and is placed in the container, at location /restore.
+Backup is created every day at 04:00, and is placed in the container, at location /backup.
 In the default docker-compose.yml file, this folder is allready mapped.
 
 The items in backup:
