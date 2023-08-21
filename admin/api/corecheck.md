@@ -14,6 +14,9 @@ GET /api/core-check
 
 Returns status 500 when something is wrong, else 200
 
+> [!NOTE]
+> This API dosnt require authentication
+
 ##### Example
 ```bash
 curl 'http://HOSTNAME/api/core-check' \
