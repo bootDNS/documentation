@@ -3,7 +3,7 @@ layout: default
 title: Records
 parent: API Reference
 grand_parent: bootDNS-Admin Web Interface
-nav_order: 2
+nav_order: 4
 has_children: false
 ---
 
