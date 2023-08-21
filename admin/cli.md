@@ -64,7 +64,7 @@ docker compose exec -ti admin php artisan zones:dsu {--domain=}
 
 ---
 
-### Zones - DSU
+### Zones - File
 Get the raw zone file for domain
 
 ```
