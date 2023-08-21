@@ -8,12 +8,13 @@ has_children: false
 
 ## Traefik / Lego HTTPREQ Support
 
-The following must be set:
+We dont have a native traefik dns provider, but we do support the dns provider plugin "[httpreq](https://go-acme.github.io/lego/dns/httpreq/)"
 
-```
-provider: httpreq
+| Variable | Value |
+| ------ | ------ |
+| HTTPREQ_ENDPOINT | http(s)://your-bootdns-host:port/lego |
+| HTTPREQ_USERNAME | bootdns |
+| HTTPREQ_PASSWORD | A generated bootdns token from gui |
+| HTTPREQ_PROPAGATION_TIMEOUT | 20 |
 
-HTTPREQ_ENDPOINT=http://your-bootdns-ip-or-host/api/lego
-HTTPREQ_USERNAME=lego
-HTTPREQ_PASSWORD=TOKEN-GENERATED-WITHIN-BOOTDNS
-```
+The Token generated must have the "zones-edit" capability
