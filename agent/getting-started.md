@@ -12,13 +12,13 @@ has_children: false
 Since all components run in Docker, it is a requirement for bootDNS to have this installed, please see Dockers own guides at: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
 
 ### 2. Download bootDNS's docker-compose file
-We have made it easy to get up and running, simply download this file: [docker-compose.yml](https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.yml?raw=true) to a folder where you want to keep the database files.
+We have made it easy to get up and running, simply download this file: [docker-compose.yml](https://raw.githubusercontent.com/bootDNS/agent/main/docker-compose.yml) to a folder where you want to keep the database files.
 
 Example:
 ```bash
 user@host:~$ mkdir -p /opt/bootDNS-agent
 user@host:~$ cd /opt/bootDNS-agent
-user@host:/opt/bootDNS-agent$ wget 'https://github.com/bootDNS/bootDNS-agent/blob/main/docker-compose.yml?raw=true' -O docker-compose.yml
+user@host:/opt/bootDNS-agent$ wget 'https://raw.githubusercontent.com/bootDNS/agent/main/docker-compose.yml' -O docker-compose.yml
 ```
     
 ### 3. Insert your token
