@@ -12,13 +12,13 @@ has_children: false
 Since all components run in Docker, it is a requirement for bootDNS to have this installed, please see Dockers own guides at: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
 
 ### 2. Download bootDNS's docker-compose file
-We have made it easy to get up and running, simply download this file: [docker-compose.yml](https://github.com/bootDNS/bootDNS-admin/blob/main/docker-compose.yml) to a folder where you want to keep the database files.
+We have made it easy to get up and running, simply download this file: [docker-compose.yml](https://raw.githubusercontent.com/bootDNS/admin/main/docker-compose.yml) to a folder where you want to keep the database files.
 
 Example:
 ```bash
 user@host:~$ mkdir -p /opt/bootDNS
 user@host:~$ cd /opt/bootDNS
-user@host:/opt/bootDNS$ wget 'https://github.com/bootDNS/bootDNS-admin/blob/main/docker-compose.yml?raw=true' -O docker-compose.yml
+user@host:/opt/bootDNS$ wget 'https://raw.githubusercontent.com/bootDNS/admin/main/docker-compose.yml' -O docker-compose.yml
 ```
     
 ### 3. Generate your APP_KEY
@@ -26,7 +26,7 @@ bootDNS-admin is using a PHP framework called Laravel, this requires a APP_KEY t
 To get a unique key, run:
 
 ```bash
-docker run --rm --entrypoint php terpz/bootdns:admin-latest artisan key:generate --show
+docker run --rm --entrypoint php ghcr.io/bootdns/admin:latest artisan key:generate --show
 ```
 
 This will return something like:
@@ -48,7 +48,7 @@ Too see if its all running:
 
 ```bash
 user@host:~$ docker ps
-f3d13cc3b955   terpz/bootdns:admin-latest   "bash run.sh"            33 seconds ago   Up 31 seconds (healthy)   0.0.0.0:80->80/tcp, :::80->80/tcp                       bootdns-admin-1
+f3d13cc3b955   bootdns/admin:latest   "bash run.sh"            33 seconds ago   Up 31 seconds (healthy)   0.0.0.0:80->80/tcp, :::80->80/tcp                       bootdns-admin-1
 ee74597810cd   influxdb:2.2                 "/entrypoint.sh infl…"   34 seconds ago   Up 32 seconds             0.0.0.0:8086->8086/tcp, :::8086->8086/tcp               bootdns-influxdb-1
 040fb3c3ef61   mariadb:latest               "docker-entrypoint.s…"   34 seconds ago   Up 32 seconds             3306/tcp                                                bootdns-mariadb-1
 
