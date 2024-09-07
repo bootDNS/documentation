@@ -39,7 +39,7 @@ If Splunk HEC:
       - splunkhec_port=8088
       - splunkhec_token=....
       - splunkhec_insecuressl=false
-      - type=splunk
+      - type=splunkhec
 
 ```
 
